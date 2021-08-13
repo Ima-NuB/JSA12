@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jQuery/2.1.3/jQuery.min.js"></script> -->
+	<script src="register.js"></script>
+</head>
+<body>
+	<div id='regPage' style='display:block;'>
+		<label for='name'>Name:</label>
+		<input type='text' id='name' name='name'  value='' placeholder='Your name' > <br><br>
+
+		<label for='age'>Age:</label>
+		<input type='number' id='age' name='age' value='' placeholder='Your age' > <br><br>
+
+		<label for='email'>E-mail:</label>
+		<input type='email' id='email' name='email' value='' placeholder='Your e-mail'> <br><br>
+
+		<label for='pw'>Password:</label>
+		<input type='password' id='pw' name='pw' value='' placeholder='Your password'>
+
+		<button onclick="reg()" id='reg'>Register</button>
+	</div>
+
+	<div id='lPage' style='display:none;'>
+		<label for='emailCheck'>E-mail:</label>
+		<input type='email' id='emailCheck' name='emailCheck' value='' placeholder='Your e-mail'> <br><br>
+
+		<label for='pwCheck'>Password:</label>
+		<input type='password' id='pwCheck' name='pwCheck' value='' placeholder='Your password'> <br><br>
+
+		<button onclick="l()" id='l'>Log in</button>
+	</div>
+	<div id="congrats" style='display:none;'>
+		<h1>You are logged in</h1>
+	</div>
+</body>
+</html>
